@@ -17,7 +17,9 @@ def login_request():
     #login_url = 'https://shimo.im/login?from=home'
     login_url ='https://shimo.im/lizard-api/auth/password/login'
     form_data = {
+
     'mobile':'134xxxxxxxx',
+
     'password':'xxxxx'
     }
 
