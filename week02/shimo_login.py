@@ -17,8 +17,8 @@ def login_request():
     #login_url = 'https://shimo.im/login?from=home'
     login_url ='https://shimo.im/lizard-api/auth/password/login'
     form_data = {
-    'mobile':'13488859725',
-    'password':'880913ljl'
+    'mobile':'134xxxxxxxx',
+    'password':'xxxxx'
     }
 
     response = s.post(login_url, data=form_data, headers=headers, cookies=s.cookies)
@@ -35,7 +35,7 @@ def login_webdriver():
 
         browser.get('https://shimo.im/login?from=home')
         time.sleep(1)
-        browser.find_element_by_xpath('//*[@name="mobileOrEmail"]').send_keys('134888xxxxx')
+        browser.find_element_by_xpath('//*[@name="mobileOrEmail"]').send_keys('134xxxxxxxx')
         browser.find_element_by_xpath('//*[@name="password"]').send_keys('xxxxx')
         time.sleep(1)
         browser.find_element_by_xpath('//button[contains(@class,"sm-button submit")]').click()
